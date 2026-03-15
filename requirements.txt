@@ -1,0 +1,36 @@
+# 核心基础
+python-dotenv>=1.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+jsonlines>=3.1.0
+tqdm>=4.65.0
+
+# 检索核心
+faiss-cpu>=1.7.4
+rank_bm25>=0.2.2
+sentence-transformers>=2.2.2
+openai>=1.0.0
+cohere>=4.0.0
+FlagEmbedding>=1.2.0
+
+# LLM&代码分析
+google-generativeai>=0.3.1
+requests>=2.31.0
+tree-sitter>=0.20.1
+huggingface-hub>=0.17.0
+
+# Web服务
+flask>=2.3.0
+jinja2>=3.1.2
+werkzeug>=2.3.0
+uvicorn>=0.23.2
+
+# 实验&评估
+jupyterlab>=4.0.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+pytest>=7.4.0
+
+# 工具
+setuptools>=68.0
+wheel>=0.41.0

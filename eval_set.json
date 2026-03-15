@@ -1,0 +1,118 @@
+[
+  {
+    "query": "线段树区间修改",
+    "relevant_ids": [],
+    "description": "线段树区间修改（懒标记）的C++实现代码"
+  },
+  {
+    "query": "树状数组单点修改区间查询",
+    "relevant_ids": [],
+    "description": "树状数组基本操作的C++实现"
+  },
+  {
+    "query": "SPFA SLF优化",
+    "relevant_ids": [
+      "q"
+    ],
+    "description": "SPFA算法的SLF优化实现代码"
+  },
+  {
+    "query": "Dijkstra堆优化",
+    "relevant_ids": [
+      "q",
+      "q",
+      "q",
+      "q",
+      "q"
+    ],
+    "description": "优先队列优化Dijkstra的C++实现"
+  },
+  {
+    "query": "并查集路径压缩",
+    "relevant_ids": [
+      "1"
+    ],
+    "description": "并查集查找操作路径压缩实现"
+  },
+  {
+    "query": "KMP匹配",
+    "relevant_ids": [
+      "1",
+      "1"
+    ],
+    "description": "KMP字符串匹配算法实现"
+  },
+  {
+    "query": "快速排序三路划分",
+    "relevant_ids": [
+      "1",
+      "1"
+    ],
+    "description": "三路快速排序C++代码"
+  },
+  {
+    "query": "01背包",
+    "relevant_ids": [],
+    "description": "01背包问题动态规划实现"
+  },
+  {
+    "query": "LCA倍增法",
+    "relevant_ids": [],
+    "description": "最近公共祖先倍增法实现"
+  },
+  {
+    "query": "匈牙利算法",
+    "relevant_ids": [],
+    "description": "二分图最大匹配匈牙利算法实现"
+  },
+  {
+    "query": "FFT递归实现",
+    "relevant_ids": [],
+    "description": "快速傅里叶变换递归版C++代码"
+  },
+  {
+    "query": "Splay区间翻转",
+    "relevant_ids": [],
+    "description": "伸展树区间翻转操作的实现"
+  },
+  {
+    "query": "Tarjan割点",
+    "relevant_ids": [],
+    "description": "Tarjan算法求无向图割点"
+  },
+  {
+    "query": "高斯消元",
+    "relevant_ids": [],
+    "description": "高斯消元法解线性方程组"
+  },
+  {
+    "query": "MillerRabin素数测试",
+    "relevant_ids": [],
+    "description": "Miller-Rabin素性测试实现"
+  },
+  {
+    "query": "AC自动机",
+    "relevant_ids": [],
+    "description": "AC自动机多模式匹配实现"
+  },
+  {
+    "query": "主席树静态第k小",
+    "relevant_ids": [],
+    "description": "可持久化线段树求区间第k小"
+  },
+  {
+    "query": "网络流Dinic",
+    "relevant_ids": [],
+    "description": "Dinic算法最大流实现"
+  },
+  {
+    "query": "Manacher回文串",
+    "relevant_ids": [],
+    "description": "Manacher算法求最长回文子串"
+  },
+  {
+    "query": "CDQ分治",
+    "relevant_ids": [],
+    "description": "CDQ分治解决三维偏序"
+  }
+]

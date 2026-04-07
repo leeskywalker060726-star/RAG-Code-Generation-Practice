@@ -125,22 +125,14 @@ pip install faiss-gpu>=1.7.4
 ```bash
 # 安装全部依赖
 pip install -r requirements.txt
-
-# 若仅运行指定实验模块，可按需安装：
-# T1-T3（main.ipynb）：pip install jupyterlab transformers datasets
-# T4（oi_retriever_api/oi_web_demo）：pip install fastapi uvicorn requests
-# T5（code_completion）：pip install transformers torch tree-sitter
 ```
 
 ## 四、项目结构（核心聚焦T1-T5模块）
 ```
 项目根目录/
 ├── main.ipynb                # T1-T3核心实验：上下文感知策略验证（数据处理/模型微调/效果评估）
-├── oi_retriever_api/         # T4实验：开源信息检索API模块（接口定义/检索逻辑/数据适配）
-│   ├── main.py               # API启动入口
-│   ├── retriever.py          # 核心检索逻辑
-│   └── config.py             # 检索配置（数据源/阈值/模型路径）
-├── oi_web_demo/              # T4实验：开源信息检索Web演示（前端页面/后端交互/可视化）
+├── oi_retriever_api.py       # T4实验：开源信息检索API模块（接口定义/检索逻辑/数据适配）
+├── oi_web_demo.py            # T4实验：开源信息检索Web演示（前端页面/后端交互/可视化）
 ├── code_completion/          # T5实验：上下文感知代码补全核心模块
 │   ├── templates.py          # 网页设计文件
 │   ├── analyzer.py           # 补全推理核心逻辑
@@ -168,13 +160,13 @@ jupyter lab main.ipynb
 #### 5.2.1 启动检索API（oi_retriever_api）
 ```bash
 # 进入API目录并启动
-cd oi_retriever_api
-python main.py
+python oi_retriever_api.py
+# api核心功能web展示
+python oi_web_demo.py
 ```
 #### 5.2.2 启动Web演示（oi_web_demo）
 ```bash
 # 进入Demo目录并启动
-cd oi_web_demo
 python app.py
 ```
 **核心实验目标**：验证开源信息作为补充上下文对代码补全的增益效果，输出检索准确率/召回率指标。
@@ -183,8 +175,7 @@ python app.py
 该模块整合T1-T3的上下文策略与T4的开源检索能力，实现端到端代码补全：
 ```bash
 # 快速运行代码补全示例
-cd code_completion
-python run.py \
+python app.py \
   --model_path "你的大模型路径" \
   --code_prompt "def calculate_sum(arr):\n    # 计算数组元素和" \
   --use_open_source_context True  # 是否启用T4的开源检索上下文
